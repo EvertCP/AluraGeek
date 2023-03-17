@@ -1,0 +1,146 @@
+/* Variables Colores */
+
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #2a7ae4;
+    --azul-destaque: #2a7ae4;
+    --bf-contato: #eaf2fd;
+    font-family: "Releway", sans-serif;
+}
+
+/* Patron Proyecto */
+textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+  padding: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--azul-destaque);
+  font-weight: 800;
+  font-family: "Releway", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+/* Reset-CSS */
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Releway", sans-serif;
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    padding: 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.barra-nav {
+    width: 1101px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 29.17px;
+    width: 40.02px;
+}
+
+.logo p {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.logo .logo-azul {
+    margin-left: 10px;
+    color: var(--azul-destaque)
+}
+
+/* Banner */
+
+.destaque {
+    height: 300px;
+    padding-left: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    background-image: url(../imagenes/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    opacity: 90%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.banner-promociones {
+    bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 2rem;
+}
+
+.banner-promociones h1,
+.banner-promociones h4 {
+    color: var(--input-bg);
+}
+
+.banner-promociones h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.banner-promociones h4 {
+    font-size: 20px;
+
+}
+
+.btn-submit {
+    color: #fff;
+    cursor: pointer;
+    background: var(--azul-destaque);
+    border: 0;
+    padding: 16px;
+    transition: 0.4s;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #1b1d1b;
+}
